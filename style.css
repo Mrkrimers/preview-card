@@ -131,7 +131,7 @@ header nav p:not(:last-child) {
     position: absolute;
     top: 20px;
     left: -150px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .statistics h2 {
@@ -150,6 +150,8 @@ header nav p:not(:last-child) {
     border: 1px solid #E7EAEB;
     border-radius: 21px;
     height: 172px;
+    position: relative;
+    z-index: 2;
 }
 
 .statistics .wrapper div {
@@ -191,6 +193,7 @@ header nav p:not(:last-child) {
     border: 1px solid #E7EAEB;
     border-radius: 21px;
     height: 172px;
+
 }
 
 .about-us .wrapper-two .info .img-vector {
@@ -253,9 +256,15 @@ footer {
     margin-top: 120px;
 }
 
+footer h1 {
+    font-family: 800 37px'Mulish';
+    color: #001A49;
+}
+
 footer .img-text {
     background-image: url(./assets/Marico.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 78px;
     height: 56px;
 }
@@ -273,4 +282,95 @@ footer nav {
 footer nav p:not(:first-child) {
     position: relative;
     top: -40px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+
+    header {
+        width: 600px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+
+    .introductory {
+        margin-top: 100px;
+    }
+
+    .introductory .img-video {
+        display: none;
+    }
+
+    .introductory .info h1 {
+        font: 800 30px 'Mulish';
+        text-align: center;
+    }
+
+    .introductory .info p {
+        text-align: center;
+    }
+
+    .introductory .info .btn {
+        margin: auto;
+    }
+
+
+    .statistics .wrapper {
+        flex-direction: column;
+        background-color: #F5F5F5;
+        border-width: 0;
+        align-items: center;
+    }
+
+    .statistics .wrapper div:not(:last-child) {
+        border-width: 0;
+    }
+
+    .statistics .img-circle {
+        display: none;
+    }
+
+    .about-us .wrapper-two .info {
+        max-width: 600px;
+        height: 130px;
+    }
+
+    .about-us .wrapper-two .info p {
+        margin: 15px 0 0;
+    }
+    
+    .about-us .wrapper-two .info h2 {
+        margin: 15px 0 0;
+    }
+
+    .about-us .wrapper-two .info .img-vector {
+        display: none;
+    }
+
+    .right-now .img-text {
+        width: 103px;
+        height: 100px;
+    }
+
+    .right-now h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    footer .img-text {
+        width: 58px;
+        height: 36px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+
+   
 }
