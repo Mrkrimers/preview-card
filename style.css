@@ -298,8 +298,14 @@ footer nav p:not(:first-child) {
     }
 
 
-    .introductory {
+    /* @@@introductory */
+        .introductory {
         margin-top: 100px;
+        display: block;
+    }
+
+    .introductory .info {
+        width: 600px;
     }
 
     .introductory .img-video {
@@ -316,9 +322,14 @@ footer nav p:not(:first-child) {
     }
 
     .introductory .info .btn {
-        margin: auto;
+        margin: 20px auto;
+
     }
 
+    /* @@@statistics */
+    .statistics {
+        margin-top: 50px;
+    }
 
     .statistics .wrapper {
         flex-direction: column;
@@ -335,27 +346,42 @@ footer nav p:not(:first-child) {
         display: none;
     }
 
+
+    /* @@@.about-us */
+    .about-us .advantage h1 {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+
+    .about-us .advantage p{
+        margin: 0 auto 50px;
+    }
+
     .about-us .wrapper-two .info {
         max-width: 600px;
-        height: 130px;
+        height: auto;
     }
 
-    .about-us .wrapper-two .info p {
-        margin: 15px 0 0;
-    }
-    
-    .about-us .wrapper-two .info h2 {
-        margin: 15px 0 0;
+    .about-us .wrapper-two .info h2,
+    .about-us .wrapper-two .info p{
+        margin: 15px 15px;
     }
 
+   
     .about-us .wrapper-two .info .img-vector {
         display: none;
     }
 
+
+
+    /* @@@ right-NOW */
     .right-now .img-text {
         width: 103px;
         height: 100px;
+        margin-top: 50px;
     }
+
+
 
     .right-now h1 {
         font-size: 25px;
@@ -363,6 +389,11 @@ footer nav p:not(:first-child) {
     }
 
 
+    /* @@@FOOTER */
+
+    footer {
+        margin-top: 50px;
+    }
     footer .img-text {
         width: 58px;
         height: 36px;
@@ -372,5 +403,5 @@ footer nav p:not(:first-child) {
         font-size: 20px;
     }
 
-   
+
 }
